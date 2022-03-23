@@ -21,8 +21,8 @@ function CntBlue {
         if ($Volue) { Invoke-Expression "$nircmd setsysvolume ((65535*$Volue)/100.0)" }
     }
     if ($Disconnect) {
-        Invoke-Expression $btcom -n $Name -r -s110b
-        Invoke-Expression $btcom -n $Name -r -s111e
+        Invoke-Expression "$btcom -n $Name -r -s110b"
+        Invoke-Expression "$btcom -n $Name -r -s111e"
     }
 }
 # CntBlue -Info

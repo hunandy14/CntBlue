@@ -1,0 +1,1 @@
+pwsh -Command "&{Import-Module %~dp0CntBlue.ps1; CntBlue -Connect 'WF-1000XM4' -Volue:53}"
